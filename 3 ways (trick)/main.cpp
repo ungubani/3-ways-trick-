@@ -62,7 +62,7 @@ void partition(char a[], int l, int r, int& i, int& j, int size)  // size using 
             p++;
             swap(a[p], a[i]);
 
-            printf("Swapped %d && %d. Array after step %d: ", p, i, step_number++);
+            printf("Swapped same left occur of pivot: %d && %d. Array after step %d: ", p, i, step_number++);
             printarr(a, size);
         }
 
@@ -72,7 +72,7 @@ void partition(char a[], int l, int r, int& i, int& j, int size)  // size using 
             q--;
             swap(a[j], a[q]);
 
-            printf("Swapped %d && %d. Array after step %d: ", j, q, step_number++);
+            printf("Swapped same right occur of pivot: %d && %d. Array after step %d: ", j, q, step_number++);
             printarr(a, size);
         }
     }
